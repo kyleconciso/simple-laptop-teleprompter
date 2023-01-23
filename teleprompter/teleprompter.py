@@ -72,7 +72,7 @@ class Teleprompter:
         with open(self.script_file, 'r') as file:
             words = file.read()
         words = words.replace('\n', ' ')
-        self.phrases = [' '.join(words.split(' ')[i:i+self.phrase_length]) for i in range(0, len(words.split(' ')), self.phrase_length) if i % 2 == 0]
+        self.phrases = [' '.join(words.split(' ')[i:i+self.phrase_length]) for i in range(0, len(words.split(' ')), 1)]        
         self.listener.start()
         thread = threading.Thread(target=self.start_listener)
         thread.start()
