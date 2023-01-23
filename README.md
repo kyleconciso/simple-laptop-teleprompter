@@ -1,6 +1,6 @@
 <h1>Simple Laptop Teleprompter</h1>
 
-![Demo](https://i.ibb.co/k39btQJ/example.png)
+![Demo](https://i.ibb.co/SwwKt82/Demo.png)
 
 <p>A simple teleprompter application designed specifically for laptops with built-in webcams.</p>
 
