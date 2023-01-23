@@ -30,11 +30,11 @@
 
   
 
-<code> python teleprompter.py -s myscript.tx -p 5 -H 15 </code>
+<code> python teleprompter.py -s myscript.txt -p 5 -H 15 </code>
 
   
 
-<p>This will run the teleprompter with the script file "myscript.txt", a phrase length of 5, and a height of 15.</p>
+<p>This will run the teleprompter with the script file "script.txt", a phrase length of 5, and a height of 15.</p>
 
   
 
