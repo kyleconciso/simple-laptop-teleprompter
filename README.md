@@ -1,5 +1,5 @@
 <h1>Simple Laptop Teleprompter</h1>
-<p>A simple Python script to create a teleprompter application for laptops with built-in webcams.</p>
+<p>A simple Python script to create a teleprompter application designed for laptops with built-in webcams.</p>
 <ul><li>Display text in a GUI window</li><li>Scroll through text using the left and right arrow keys</li><li>Exit program by pressing the ESC key</li><li>Text is positioned at the middle of the top of the screen, making it easier for users to look directly at the camera</li><li>Option to specify the script file to be used and the phrase length for the teleprompter</li></ul>
 <h2>Requirements</h2>
 <ul><li>Python 3</li><li>Tkinter</li><li>pynput</li></ul>
