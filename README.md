@@ -34,7 +34,7 @@
 
   
 
-<p>This will run the teleprompter with the script file "myscript.txt", a phrase length of 5, and a height of 15.</p>
+<p>This will run the teleprompter with the script file "script.txt", a phrase length of 5, and a height of 15.</p>
 
   
 
