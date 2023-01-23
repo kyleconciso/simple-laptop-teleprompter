@@ -11,7 +11,7 @@
 
 <h2>Usage</h2>
 
-<ol><li>Clone the repository</li><li>Run the script by entering <code>python teleprompter.py</code> in the command line</li><li>Use the left and right arrow keys to scroll through the text</li><li>Press the ESC key to exit the program</li><li>You can also specify the script file to be used and the phrase length for the teleprompter by using command line arguments:<ul><li><code>-s</code> or <code>--script</code> to specify the script file (default: script.txt)</li><li><code>-p</code> or <code>--phrase</code> to specify the phrase length (default: 3)</li></ul></li></ol>
+<ol><li>Clone the repository</li><li>Run the script by entering <code>python teleprompter.py</code> in the command line</li><li>Use the left and right arrow keys to scroll through the text</li><li>Press the ESC key to exit the program</li><li>You can also specify the script file to be used, the phrase length, and the height for the teleprompter by using command line arguments:<ul><li><code>-s</code> or <code>--script</code> to specify the script file (default: script.txt)</li><li><code>-p</code> or <code>--phrase</code> to specify the phrase length (default: 3)</li></ul><li>Use <code>-H</code> or <code>--height</code> to specify the height of the teleprompter window (default: 15)</li></ol>
 
 <h2>Example</h2>
 
