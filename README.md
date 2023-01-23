@@ -6,7 +6,7 @@
 
   
 
-<ul><li>Display text in a GUI window</li><li>Scroll through text using the left and right arrow keys</li><li>Exit program by pressing the ESC key</li><li>Text is positioned at the middle of the top of the screen, making it easier for users to look directly at the camera</li><li>Option to specify the script file to be used and the phrase length for the teleprompter</li></ul>
+<ul><li>Display text in a GUI window</li><li>Scroll through text using the left and right arrow keys</li><li>Exit program by pressing the ESC key</li><li>Text is positioned at the middle of the top of the screen, making it easier for users to look directly at the camera</li><li>Option to specify the script file to be used, phrase length, and height for the teleprompter</li></ul>
 
   
 
