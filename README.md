@@ -15,9 +15,9 @@
 
 <h2>Example</h2>
 
-<code> python teleprompter py -s myscript.tx -p 5</code>
+<code> python teleprompter py -s myscript.tx -p 5 -H 15 </code>
 
-<p>This will run the teleprompter with the script file "myscript.txt" and a phrase length of 5.</p>
+<p>This will run the teleprompter with the script file "myscript.txt", a phrase length of 5, and a height of 15.</p>
 
 <h2>Note</h2>
 
