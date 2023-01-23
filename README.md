@@ -30,7 +30,7 @@
 
   
 
-<code> python teleprompter.py -s myscript.tx -p 5 -H 15 </code>
+<code> python teleprompter.py -s myscript.txt -p 5 -H 15 </code>
 
   
 
