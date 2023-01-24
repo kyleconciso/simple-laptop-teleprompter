@@ -77,7 +77,7 @@ class Teleprompter:
         self.gui.start()
 
 if __name__ == '__main__':
-    print("\nWelcome! Press left and right arrows to scroll through the text. Press ESC to terminate.")
+    print("Welcome! Press left and right arrows to scroll through the text. Press ESC to terminate.")
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--script", type=str, default='script.txt', help="script file to be used for teleprompter")
     parser.add_argument("-p", "--phrase", type=int, default=3, help="phrase length for teleprompter")
