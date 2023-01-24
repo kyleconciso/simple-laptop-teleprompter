@@ -32,7 +32,6 @@ class Teleprompter:
         self.gui = TeleprompterGUI(height)
 
     def on_press(self, key):
-        print(self.current_phrase)
         if self.welcome == False and (key == keyboard.Key.left or key == keyboard.Key.right):
             self.welcome = True
             self.gui.update_text(self.phrases[self.current_phrase])
