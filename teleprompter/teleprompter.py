@@ -66,18 +66,8 @@ class Teleprompter:
         self.listener.start()
 
     def split_text(self, words: str):
-        words = words.replace('\n', ' ').split(' ')
-        print(words)
-        n = -1
-        phrases = []
-        for i in range(0, len(words)):
-            n += 1
-            if n == self.phrase_length:
-                phrases.append(' '.join(words[i-self.phrase_length:i]))
-                print(i-self.phrase_length, i, words[i-self.phrase_length:i])
-                n = -1
-        return phrases
-            
+        words = words.replace('\n', ' ').split()
+        return [ ' '.join(words[i:i+self.phrase_length]) for i in range(0, len(words), self.phrase_length)]
 
     def start(self):
         with open(self.script_file, 'r') as file:
