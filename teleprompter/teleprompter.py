@@ -27,12 +27,12 @@ class Teleprompter:
         self.script_file = script_file
         self.phrase_length = phrase_length
         self.phrases = []
-        self.current_phrase = -1
+        self.current_phrase = 0
         self.welcome = False
-        self.listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         self.gui = TeleprompterGUI(height)
 
     def on_press(self, key):
+        print(self.current_phrase)
         if self.welcome == False and (key == keyboard.Key.left or key == keyboard.Key.right):
             self.welcome = True
             self.gui.update_text(self.phrases[self.current_phrase])
@@ -57,23 +57,32 @@ class Teleprompter:
             self.gui.root.destroy()
             self.listener.stop()
             
-    def on_release(self, key):
-        pass
-
     def update_text(self, new_text: str):
         self.label.config(text=new_text)
         self.label.update()
 
     def start_listener(self):
-        listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
-        listener.start()
+        self.listener = keyboard.Listener(on_press=self.on_press)
+        self.listener.start()
+
+    def split_text(self, words: str):
+        words = words.replace('\n', ' ').split(' ')
+        print(words)
+        n = -1
+        phrases = []
+        for i in range(0, len(words)):
+            n += 1
+            if n == self.phrase_length:
+                phrases.append(' '.join(words[i-self.phrase_length:i]))
+                print(i-self.phrase_length, i, words[i-self.phrase_length:i])
+                n = -1
+        return phrases
+            
 
     def start(self):
         with open(self.script_file, 'r') as file:
             words = file.read()
-        words = words.replace('\n', ' ')
-        self.phrases = [' '.join(words.split(' ')[i:i+self.phrase_length]) for i in range(0, len(words.split(' ')), 1)]        
-        self.listener.start()
+        self.phrases = self.split_text(words)     
         thread = threading.Thread(target=self.start_listener)
         thread.start()
         self.gui.start()
